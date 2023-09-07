@@ -175,3 +175,38 @@ import { Tooltip } from '@idirdev/spark-ui';
 ## License
 
 MIT
+
+---
+
+## 🇫🇷 Documentation en français
+
+### Description
+`spark-ui` est une bibliothèque de composants React minimaliste construite avec TypeScript et Tailwind CSS. Elle fournit un ensemble de composants UI prêts à l'emploi (Button, Input, Badge, Avatar, Card, Modal, Dropdown, Alert, Spinner, Tooltip) avec des tokens de design cohérents.
+
+### Installation
+```bash
+npm install @idirdev/spark-ui
+```
+
+Dépendances pair :
+```bash
+npm install react react-dom tailwindcss
+```
+
+### Utilisation
+```tsx
+import { Button, Badge, Modal } from '@idirdev/spark-ui';
+
+// Bouton avec variante
+<Button variant="primary" size="md">Cliquer ici</Button>
+
+// Badge avec indicateur
+<Badge color="green" variant="subtle" dot>Actif</Badge>
+
+// Modale contrôlée
+<Modal open={isOpen} onClose={() => setIsOpen(false)} title="Confirmation">
+  <p>Êtes-vous sûr ?</p>
+</Modal>
+```
+
+Consultez la documentation anglaise ci-dessus pour la liste complète des composants et leurs props.
